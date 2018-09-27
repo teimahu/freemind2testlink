@@ -11,25 +11,23 @@ Specific writing can refer to Demo.mm, Demo.xmind as a reference
 
 ![mind](img/mind.png)
 
-#### **使用说明**
-- xmind编写的用例请导出为freemind文件
-
-- 将需要转换的freemind文件(例如demo.mm) 复制到当前文件夹
-
-- 双击By_flag(Mac：By_flag、Windows：By_flag.exe),双击即可生成xml文件和logger.log（log文件可查看导出的相关日志）
-也可以执行Freemind.py文件，相关的依赖库`lxml`请自行下载`pip install lxml`
-
-- 将生成的xml文件导入到Testlink就好啦
-
-- mm文件的文件名最好不要出现特殊符号
+#### **Instructions for use**
+- Use cases written by xmind, please export as freemind files
+- Copy the freemind file (eg demo.mm) that needs to be converted to the current folder
+- Double-click By_flag (Mac: By_flag, Windows: By_flag.exe) and double-click to generate the xml file and logger.log (log file to view the exported related logs)
+You can also execute the Freemind.py file, and the related dependencies `lxml`, please download `pip install lxml`.
+- Import the generated xml file into Testlink.
+- mm file name is best not to have special symbols
 
   ![testlink](img/testlink.png)
 
-#### **注意：**
+#### **Note: **
 
-- 生成的xml文件在导入testlink时，中心主题没有设定为suite的，请在testlink中手动创建一个测试用例集，将xml导入到testlink指定的用例集下。以免和原有的测试用例混淆造成管理混乱 （也可以直接在顶层加上旗帜图标，这样导出到testlink就是在一个文件夹下了）
-- 执行exe后会将文件夹下所有的.mm文件全部执行转换生成xml，为避免造成运行错误，请尽量保持文件夹下只有一个mm文件。
+- When the generated xml file is imported into testlink, the central theme is not set to suite.
+Please manually create a test case set in testlink and import the xml into the use case set specified by testlink.
+In order to avoid confusion with the original test cases, management confusion (you can also add the flag icon directly on the top layer, so that the export to testlink is in a folder)
+- After executing the exe, all the .mm files in the folder will be converted to generate xml. To avoid running errors, please try to keep only one mm file under the folder.
 
-#### **生成exe文件：**
-使用`Pyinstaller`进行打包，`pip install pyinstaller`安装好之后，到该文件夹下，执行`pyinstaller -F Freemind.py`.
-在生成的dist文件夹下就会生成一个独立的exe文件了。Mac下一样，需要修改一行代码。
+#### **Generate exe file: **
+Use `Pyinstaller` to package, `pip install pyinstaller` after installation, go to this folder and execute `pyinstaller -F Freemind.py`.
+A separate exe file will be generated in the generated dist folder. Like the Mac, you need to modify one line of code.
