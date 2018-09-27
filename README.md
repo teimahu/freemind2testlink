@@ -1,15 +1,13 @@
-﻿使用xmind、freemind创建的测试用例导出成testlink可导入的xml文件
-xmind编写的用例请导出为freemind格式文件(.mm后缀文件)
+Use the test cases created by xmind and freemind to export the xml files that can be imported into testlink. The use cases written by xmind should be exported to freemind format files (.mm suffix files).
+Xmind use case writing requirements:
 
-#### **xmind用例编写要求：**
+ * TestSuite needs to add the relevant icon: Banner (no requirement for color)
+ * Step-by-step use cases require the addition of associated icons: Stars (no color required)
+ * Summary and description of use cases separated by & (for example: loading an elephant into the refrigerator & having a refrigerator)
+ * Step-by-step use cases The description of each step and the desired result are separated by & (for example: ‘click the login button & login successfully’)
+ * Use case priority needs to be associated with the icon: 1 2 3 ---> high medium low (the default for other digital icons is medium priority)
 
-- TestSuite需要加上相关的图标：  旗帜 （对颜色无要求）
-- 有步骤的用例需要加上相关的图标： 星星 （对颜色无要求）
-- 用例的 摘要和描述 用 & 进行分隔  （例如： 把大象装进冰箱&有一台冰箱）
-- 有步骤的用例 各个步骤的描述及期望结果用 & 进行分隔   （例如： ‘点击登录按钮 & 登录成功’）
-- 用例优先级需要加上相关的图标：1 2 3 --->高 中 低  (标注其他数字图标的 默认是中优先级)
-
-具体的编写可以参照Demo.mm 、Demo.xmind作为参考
+Specific writing can refer to Demo.mm, Demo.xmind as a reference
 
 ![mind](img/mind.png)
 
