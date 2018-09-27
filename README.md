@@ -1,5 +1,8 @@
-Use the test cases created by xmind and freemind to export the xml files that can be imported into testlink. The use cases written by xmind should be exported to freemind format files (.mm suffix files).
-Xmind use case writing requirements:
+#### **Use the test cases created by xmind and freemind to export the xml files that can be imported into [TestLink](https://github.com/TestLinkOpenSourceTRMS/testlink-code).**
+
+The use cases written by xmind should be exported to freemind format files (.mm suffix files).
+
+**Mindmap use case writing requirements:**
 
  * TestSuite needs to add the relevant icon: Banner (no requirement for color)
  * Step-by-step use cases require the addition of associated icons: Stars (no color required)
@@ -7,7 +10,7 @@ Xmind use case writing requirements:
  * Step-by-step use cases The description of each step and the desired result are separated by & (for example: ‘click the login button & login successfully’)
  * Use case priority needs to be associated with the icon: 1 2 3 ---> high medium low (the default for other digital icons is medium priority)
 
-Specific writing can refer to Demo.mm, Demo.xmind as a reference
+For writing examples, refer to Demo.mm or Demo.xmind as a reference
 
 ![mind](img/mind.png)
 
