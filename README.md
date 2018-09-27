@@ -21,13 +21,12 @@ You can also execute the Freemind.py file, and the related dependencies `lxml`, 
 
   ![testlink](img/testlink.png)
 
-#### **Note: **
-
+#### **Note**
 - When the generated xml file is imported into testlink, the central theme is not set to suite.
 Please manually create a test case set in testlink and import the xml into the use case set specified by testlink.
 In order to avoid confusion with the original test cases, management confusion (you can also add the flag icon directly on the top layer, so that the export to testlink is in a folder)
 - After executing the exe, all the .mm files in the folder will be converted to generate xml. To avoid running errors, please try to keep only one mm file under the folder.
 
-#### **Generate exe file: **
+#### **Generate exe file**
 Use `Pyinstaller` to package, `pip install pyinstaller` after installation, go to this folder and execute `pyinstaller -F Freemind.py`.
 A separate exe file will be generated in the generated dist folder. Like the Mac, you need to modify one line of code.
